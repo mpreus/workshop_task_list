@@ -7,7 +7,7 @@
 
 /* main elements of the site */
 html {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 body {
@@ -26,13 +26,16 @@ footer {
 /* main text elements */
 h1 {
 	color: #333;
+	font-family: "Crimson Pro", serif;
 	font-size: 2rem;
 	line-height: 2rem;
 	margin-bottom: 30px;
-	margin-top: 20px;	
+	margin-top: 20px;
+	text-transform: uppercase;
 }
 h3 {
 	color: #333;
+	font-family: "Crimson Pro", serif;
 	font-size: 1.4rem;
 	line-height: 1.4rem;
 	margin: 20px 30px 30px 30px;
@@ -40,17 +43,20 @@ h3 {
 }
 p {
 	color: #333;
+	font-family: "Crimson Pro", serif;
 	font-size: 1rem;
 	line-height: .9rem;
 	margin: 10px 30px 10px 30px;
 }
 p.numberOfTasks {
 	color: #1447a6;
+	font-family: "Crimson Pro", serif;
 	font-weight: bold;
 	margin: 20px auto;
 }
 footer p {
 	color: #222;
+	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	line-height: .6rem;
 }
@@ -58,8 +64,10 @@ footer p {
 #taskInput {
 	border-radius: 5px;
 	color: #333;
+	font-family: "Crimson Pro", serif;
 	font-size: 1rem;
 	height: 35px;
+	padding-left: 5px;
 	margin-bottom: 20px;
 	width: 300px;
 }
@@ -70,9 +78,10 @@ footer p {
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px grey;
 	color: #333;
+	font-family: "Crimson Pro", serif;
 	font-size: 1rem;
-	margin-bottom: 30px;
-	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 	padding: 7px 14px;
 	text-align: center;
 	width: 120px;
@@ -80,18 +89,26 @@ footer p {
 
 /* placeholder in the task input */
 input::placeholder {
+	color: #666;
+	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	padding-left: 5px;
 }
 input::-moz-placeholder {
+	color: #666;
+	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	padding-left: 5px;
 }
 input:-moz-placeholder {
+	color: #666;
+	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	padding-left: 5px;
 }
 input:-ms-input-placeholder {
+	color: #666;
+	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	padding-left: 5px;
 }
@@ -99,12 +116,14 @@ input:-ms-input-placeholder {
 .taskItem p {
 	color: red;
 	font-size: 1.1rem;
+	font-family: "Chilanka";
 	margin-bottom: 10px;
 	margin-top: 40px;
 }
 
 .done p {
-	color: green;
+	color: darkgrey;
+	font-family: "Chilanka";
 	font-size: 1.1rem;
 	margin-bottom: 10px;
 	margin-top: 40px;
@@ -117,7 +136,8 @@ input:-ms-input-placeholder {
 
 .removeTaskButton {
 	border-radius: 3px;
-	font-size: .6rem;
+	font-size: .8rem;
+	font-family: "Crimson Pro", serif;
 	margin: 0 5px;
 	padding: 6px 20px;
 	text-align: center;
@@ -126,7 +146,8 @@ input:-ms-input-placeholder {
 
 .setCompleteButton {
 	border-radius: 3px;
-	font-size: .6rem;
+	font-size: .8rem;
+	font-family: "Crimson Pro", serif;
 	margin: 0 5px;
 	padding: 6px 20px;
 	text-align: center;
@@ -140,6 +161,7 @@ input:-ms-input-placeholder {
 	box-shadow: 4px 4px 4px grey;
 	color: #fff;
 	font-size: 1rem;
+	font-family: "Crimson Pro", serif;
 	margin-top: 40px;
 	padding: 7px 14px;
 	text-align: center;
