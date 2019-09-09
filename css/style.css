@@ -42,7 +42,12 @@ p {
 	color: #333;
 	font-size: 1rem;
 	line-height: .9rem;
-	margin: 20px 30px 30px 30px;
+	margin: 10px 30px 10px 30px;
+}
+p.numberOfTasks {
+	color: #1447a6;
+	font-weight: bold;
+	margin: 20px auto;
 }
 footer p {
 	color: #222;
@@ -73,30 +78,34 @@ footer p {
 /* placeholder in the task input */
 input::placeholder {
 	font-size: .8rem;
+	padding-left: 5px;
 }
 input::-moz-placeholder {
 	font-size: .8rem;
+	padding-left: 5px;
 }
 input:-moz-placeholder {
 	font-size: .8rem;
+	padding-left: 5px;
 }
 input:-ms-input-placeholder {
 	font-size: .8rem;
+	padding-left: 5px;
 }
 
 .taskItem p {
-	color: green;
+	color: red;
 	font-size: 1.1rem;
-	margin-bottom: 20px;
-	margin-top: 10px;
-}
-
-.taskContent {
-	color: green;
+	margin-bottom: 10px;
+	margin-top: 40px;
 }
 
 .done p {
-	color: red;
+	color: green;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+	margin-top: 40px;
+	text-decoration: line-through;
 }
 
 .invisible {
@@ -106,6 +115,7 @@ input:-ms-input-placeholder {
 .removeTaskButton {
 	border-radius: 5px;
 	height: 25px;
+	margin: 0 5px;
 	padding: 5px;
 	text-align: center;
 	width: 80px;
@@ -114,17 +124,19 @@ input:-ms-input-placeholder {
 .setCompleteButton {
 	border-radius: 5px;
 	height: 25px;
+	margin: 0 5px;
 	padding: 5px;
 	text-align: center;
 	width: 80px;
 }
 
 #removeFinishedTasksButton {
-	background-color: #1a2471;
+	background-color: #1447a6;
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px grey;
 	color: #fff;
 	font-size: 1rem;
+	margin-top: 20px;
 	padding: 7px 14px;
 	text-align: center;
 	width: 300px;
