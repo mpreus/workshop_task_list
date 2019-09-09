@@ -84,14 +84,18 @@ input:-ms-input-placeholder {
 	font-size: .8rem;
 }
 
-.taskItem {
+.taskItem p {
 	color: green;
 	font-size: 1.1rem;
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
 
-.done {
+.taskContent {
+	color: green;
+}
+
+.done p {
 	color: red;
 }
 
@@ -123,7 +127,7 @@ input:-ms-input-placeholder {
 	font-size: 1rem;
 	padding: 7px 14px;
 	text-align: center;
-	width: 240px;
+	width: 300px;
 }
 
 
