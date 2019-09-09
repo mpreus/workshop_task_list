@@ -1,0 +1,136 @@
+/* simple reset of the default style */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* main elements of the site */
+html {
+	font-size: 20px;
+}
+
+body {
+    background: #eef;
+}
+
+main, footer {
+	margin: 0;
+	text-align: center;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+/* main text elements */
+h1 {
+	color: #333;
+	font-size: 2rem;
+	line-height: 2rem;
+	margin-bottom: 30px;
+	margin-top: 20px;	
+}
+h3 {
+	color: #333;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	margin: 20px 30px 30px 30px;
+	
+}
+p {
+	color: #333;
+	font-size: 1rem;
+	line-height: .9rem;
+	margin: 20px 30px 30px 30px;
+}
+footer p {
+	color: #222;
+	font-size: .8rem;
+	line-height: .6rem;
+}
+
+#taskInput {
+	border-radius: 5px;
+	height: 35px;
+	margin-bottom: 20px;
+	width: 300px;
+}
+
+#addTaskButton {
+	background-color: #fff; 
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px grey;
+	color: #333;
+	font-size: 1rem;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding: 7px 14px;
+	text-align: center;
+	width: 120px;
+}
+
+/* placeholder in the task input */
+input::placeholder {
+	font-size: .8rem;
+}
+input::-moz-placeholder {
+	font-size: .8rem;
+}
+input:-moz-placeholder {
+	font-size: .8rem;
+}
+input:-ms-input-placeholder {
+	font-size: .8rem;
+}
+
+.taskItem {
+	color: green;
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.done {
+	color: red;
+}
+
+.invisible {
+	display: none;
+}
+
+.removeTaskButton {
+	border-radius: 5px;
+	height: 25px;
+	padding: 5px;
+	text-align: center;
+	width: 80px;
+}
+
+.setCompleteButton {
+	border-radius: 5px;
+	height: 25px;
+	padding: 5px;
+	text-align: center;
+	width: 80px;
+}
+
+#removeFinishedTasksButton {
+	background-color: #1a2471;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px grey;
+	color: #fff;
+	font-size: 1rem;
+	padding: 7px 14px;
+	text-align: center;
+	width: 240px;
+}
+
+
+
+
+
+
+
+
+
