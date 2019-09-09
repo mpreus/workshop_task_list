@@ -35,7 +35,16 @@ function init() {
 		let newButtonDelete = document.createElement("button");
 		newTask.appendChild(newButtonDelete).classList.add("removeTaskButton");
 		newButtonDelete.innerText = "Delete";
-		newButtonDelete.addEventListener('click', remove);
+		newButtonDelete.addEventListener("mouseover", hoveredIn);
+		function hoveredIn() {
+			newButtonDelete.classList.add("removeTaskButtonHovered");
+		}
+		newButtonDelete.addEventListener("mouseleave", hoveredOut);
+		function hoveredOut() {
+			newButtonDelete.classList.remove("removeTaskButtonHovered");
+		}
+
+		newButtonDelete.addEventListener("click", remove);
 		function remove(event) {
 			newTask.parentElement.removeChild(newTask);
 			let taskNumber = document.querySelectorAll("li.taskItem");  
@@ -45,10 +54,18 @@ function init() {
 // COMPLETE the task
 		let newButtonComplete = document.createElement("button");
 		newTask.appendChild(newButtonComplete).classList.add("setCompleteButton");
-		newButtonComplete.innerText = "Complete";
-		inputElement.value = ""; 
+		newButtonComplete.innerText = "Completed";
+		inputElement.value = "";
+		newButtonComplete.addEventListener("mouseover", hoverIn);
+		function hoverIn() {
+			newButtonComplete.classList.add("setCompleteButtonHovered")
+		}
+		newButtonComplete.addEventListener("mouseleave", hoverOut);
+		function hoverOut() {
+			newButtonComplete.classList.remove("setCompleteButtonHovered")
+		}
 
-	// completed task in red
+	// completed task in grey (and crossed out)
 		newButtonComplete.addEventListener("click", makeTaskContentRed);
 		function makeTaskContentRed(event) {
 			event.preventDefault();
@@ -58,7 +75,7 @@ function init() {
 				newButtonComplete.innerText = "Restore";
 			}
 			else {
-				newButtonComplete.innerText = "Complete";
+				newButtonComplete.innerText = "Completed";
 			}
 
 		/* task counter on the site */
@@ -78,6 +95,17 @@ function init() {
 				toDelete[i].parentElement.removeChild(toDelete[i]);
 			}
 		}
+		removeTasks.addEventListener("mouseover", removeHoverIn);
+		function removeHoverIn() {
+			removeTasks.removeAttribute("id");
+			removeTasks.classList.add("removeFinishedTaskButtonHover");
+		}
+		removeTasks.addEventListener("mouseleave", removeHoverOut);
+		function removeHoverOut() {
+			removeTasks.classList.remove("removeFinishedTaskButtonHover");
+			removeTasks.setAttribute("id", "removeFinishedTasksButton");
+		}
+
 }
 
 

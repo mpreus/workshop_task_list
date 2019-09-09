@@ -144,6 +144,20 @@ input:-ms-input-placeholder {
 	width: 120px;
 }
 
+.removeTaskButtonHovered {
+	background-color: red;
+	border: 1px solid darkred;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #666;
+	color: #ddd;
+	font-size: .8rem;
+	font-family: "Crimson Pro", serif;
+	margin: 0 5px;
+	padding: 6px 20px;
+	text-align: center;
+	width: 120px;
+}
+
 .setCompleteButton {
 	border-radius: 3px;
 	font-size: .8rem;
@@ -154,11 +168,39 @@ input:-ms-input-placeholder {
 	width: 120px;
 }
 
+.setCompleteButtonHovered {
+	background-color: #111;
+	border: 1px solid #333;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px #666;
+	color: #ddd;
+	font-size: .8rem;
+	font-family: "Crimson Pro", serif;
+	margin: 0 5px;
+	padding: 6px 20px;
+	text-align: center;
+	width: 120px;
+}
+
 #removeFinishedTasksButton {
-	background-color: #1447a6;
+	background-color: #4467a7;
 	border: none;
 	border-radius: 5px;
-	box-shadow: 4px 4px 4px grey;
+	box-shadow: 3px 3px 3px grey;
+	color: #fff;
+	font-size: 1rem;
+	font-family: "Crimson Pro", serif;
+	margin-top: 40px;
+	padding: 7px 14px;
+	text-align: center;
+	width: 300px;
+}
+
+.removeFinishedTaskButtonHover {
+	background-color: #0f3a8a;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
 	color: #fff;
 	font-size: 1rem;
 	font-family: "Crimson Pro", serif;
