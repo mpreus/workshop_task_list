@@ -57,13 +57,16 @@ footer p {
 
 #taskInput {
 	border-radius: 5px;
+	color: #333;
+	font-size: 1rem;
 	height: 35px;
 	margin-bottom: 20px;
 	width: 300px;
 }
 
 #addTaskButton {
-	background-color: #fff; 
+	background-color: #fff;
+	border: none;
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px grey;
 	color: #333;
@@ -113,30 +116,31 @@ input:-ms-input-placeholder {
 }
 
 .removeTaskButton {
-	border-radius: 5px;
-	height: 25px;
+	border-radius: 3px;
+	font-size: .6rem;
 	margin: 0 5px;
-	padding: 5px;
+	padding: 6px 20px;
 	text-align: center;
-	width: 80px;
+	width: 120px;
 }
 
 .setCompleteButton {
-	border-radius: 5px;
-	height: 25px;
+	border-radius: 3px;
+	font-size: .6rem;
 	margin: 0 5px;
-	padding: 5px;
+	padding: 6px 20px;
 	text-align: center;
-	width: 80px;
+	width: 120px;
 }
 
 #removeFinishedTasksButton {
 	background-color: #1447a6;
+	border: none;
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px grey;
 	color: #fff;
 	font-size: 1rem;
-	margin-top: 20px;
+	margin-top: 40px;
 	padding: 7px 14px;
 	text-align: center;
 	width: 300px;
