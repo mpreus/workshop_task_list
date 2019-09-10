@@ -49,7 +49,7 @@ p {
 	margin: 10px 30px 10px 30px;
 }
 p.numberOfTasks {
-	color: #1447a6;
+	color: #0f3a8a;
 	font-family: "Crimson Pro", serif;
 	font-weight: bold;
 	margin: 20px auto;
@@ -59,6 +59,11 @@ footer p {
 	font-family: "Crimson Pro", serif;
 	font-size: .8rem;
 	line-height: .6rem;
+}
+
+a.mailTo {
+	color: #0f3a8a;
+	text-decoration: none;
 }
 
 #taskInput {

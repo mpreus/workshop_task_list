@@ -13,10 +13,17 @@ function init() {
 	addTaskButton.addEventListener("click", takeText);
 
 	function takeText(event) { 
-		event.preventDefault(); 							// to prevent re-loading
+		event.preventDefault();
 		let taskContent = inputElement.value; 				
 		if (taskContent.length < 5 || taskContent > 99) {
-			alert("Your task should contain 5 to 99 characters");
+			Swal.fire({
+				background: "#eef",
+				confirmButtonColor: "#4467a7",
+				confirmButtonText: "Try again",
+				text: "We assume task description should contain 5 to 99 characters",
+				title: "Omission!",
+				type: "error"
+			});
 // to prevent further writing when the task text seems to be too short:
 			inputElement.value = "";
 			takeText();
