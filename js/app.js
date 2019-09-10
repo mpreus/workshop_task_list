@@ -16,7 +16,7 @@ function init() {
 		event.preventDefault();
 		let taskContent = inputElement.value; 				
 		if (taskContent.length < 5 || taskContent > 99) {
-			Swal.fire({
+			Swal.fire({ 					/* if the text of the task seems to be too short */
 				background: "#eef",
 				confirmButtonColor: "#4467a7",
 				confirmButtonText: "Try again",
